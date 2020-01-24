@@ -7,4 +7,23 @@ def count_th(word):
     
     # TBC
     
-    pass
+    
+
+    # # base case
+    if len(word) == 0:
+        return 0
+
+    # recursive, check to see if the first two characters is "th"
+    if word[0: 2] == "th":
+        return count_th(word[1:])+1
+    
+    return count_th(word[1:])
+
+    
+
+# print(count_th("abcthxyz"))
+
+
+
+
+
